@@ -61,3 +61,28 @@ echo "Dailywage:"$Dailywage
 
 
 #UC_4:SOLVING USING SWITCH CASE STATEMENT
+
+#UC_5:CALCULATING WAGES FOR MONTH
+
+
+isabsent=0
+isFullTime=1
+isPartTime=2
+salaryperhr=20
+days=20
+fullTimeHr=16
+partTimeHr=8
+	echo "Enter the input:"
+	read x
+	case $x in
+		0)	salary=0
+			echo $salary
+		;;
+		1)	salary=$(($days*$salaryperhr*$fullTimeHr))
+			echo $salary
+		;;
+		2)	salary=$(($days*$salaryperhr*$partTimeHr))
+			echo $salary
+		;;
+	esac
+	
