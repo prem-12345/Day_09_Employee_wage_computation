@@ -58,3 +58,6 @@ fi
 
 Dailywage=$(($emphr*$salaryperhr))
 echo "Dailywage:"$Dailywage
+
+
+#UC_4:SOLVING USING SWITCH CASE STATEMENT
