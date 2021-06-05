@@ -19,7 +19,7 @@ fi
 #UC_2:CALCULATE DAILY EMPLOYEE WAGE
 
 emphr=8
-salaryperhr=30
+salaryperhr=20
 
 x=$((RANDOM%2))
 
