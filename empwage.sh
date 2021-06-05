@@ -19,7 +19,7 @@ fi
 #UC_2:CALCULATE DAILY EMPLOYEE WAGE
 
 emphr=8
-salaryperhr=30
+salaryperhr=20
 
 x=$((RANDOM%2))
 
@@ -36,3 +36,25 @@ Dailywage=$(($emphr*$salaryperhr))
 echo "Dailywage:"$Dailywage
 
 
+#UC_3:ADD PART TIME EMPLOYEE AND WAGE
+
+isFullTime=1
+isPartTime=0
+
+emphr=16
+salaryperhr=20
+
+x=$((RANDOM%3))
+
+if [ $x -eq $isFullTime ]
+then
+        emphr=16
+elif [ $x -eq $isPartTime ]
+then
+        emphr=8
+else
+	emphr=0
+fi
+
+Dailywage=$(($emphr*$salaryperhr))
+echo "Dailywage:"$Dailywage
